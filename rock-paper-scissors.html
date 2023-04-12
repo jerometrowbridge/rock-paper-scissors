@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+let computerSelection = ""
+let playerSelection = prompt("This game is called Rock, Paper, Scissors. Please, make your choice:")
+let playerChoice = playerSelection
+getComputerChoice()
+console.log(`You chose ${playerSelection} and the computer chose ${computerSelection}!`)
+gameWinner()
+
+function getComputerChoice() {
+    let choices = ['rock', 'paper', 'scissors']
+    let randomNum = Math.floor(Math.random() * choices.length)
+    if (randomNum === 1) {
+        computerSelection = "rock";
+    }
+        else if (randomNum === 2) {
+           computerSelection = "paper";
+        }
+        else {
+           computerSelection = "scissors";
+        }
+    console.log(computerSelection)
+        return 
+}
+function gameWinner() {
+    if (playerChoice === computerSelection) {
+        console.log("It's a draw!")
+    }
+    else if ((playerChoice === "rock") && (computerSelection === "paper")) {
+        console.log("Paper beats rock. The computer wins!")
+    }
+    else if ((playerChoice === "rock") && (computerSelection === "scissors")) {
+        console.log("Rock beats scissors. You win!")
+    }
+    else if ((playerChoice === "paper") && (computerSelection === "rock")) {
+        console.log("Paper beats rock. You win!")
+    }
+    else if ((playerChoice === "paper") && (computerSelection === "scissors")) {
+        console.log("Scissors beats paper. The computer wins!")
+    }
+    else if ((playerChoice === "scissors") && (computerSelection === "rock")) {
+        console.log("Rock beats paper. The computer wins!")
+    }
+    else if ((playerChoice === "scissors") && (computerSelection === "paper")) {
+        console.log("Scissors beats paper. You win!")
+    }
+    
+
+}
+
+</script>
+</body></html>
