@@ -1,1 +1,2 @@
 # rock-paper-scissors
+This is a javascript based app that simulates playing "Rock, Paper, Scissors" against a computer opponent. You will play against the computer 5 games, then the total amount of victories for each player is tabulated and the overall victor is display.
