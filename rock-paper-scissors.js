@@ -133,12 +133,14 @@ function finalResult() {
     const score = document.querySelector('#score');
     if (userScore === 5) {
         const userWinner = document.createElement('h1');
+        userWinner.classList.add("winnerText")
         userWinner.textContent = "You have won the race to 5 wins!"
         const score = document.querySelector('#score');
         score.appendChild(userWinner)
     }
     else if (compScore === 5) {
         const compWinner = document.createElement('h1');
+        compWinner.classList.add("winnerText")
         compWinner.textContent = "The computer won the race to 5 wins!"
         score.appendChild(compWinner)
     }

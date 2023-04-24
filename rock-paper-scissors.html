@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="rock-paper-scissors.js" defer></script>
 </head>
 <body>
 
 <div id="container">
-<h1>It's "Rock, Paper, Scissors" race to 5 wins:</h1>
+<h1 class="title">Man vs. Machine</h1>
+    <h2 class="subheading">Do you have what it takes to beat the computer five times?</h2>
 <div id="buttons">
-<button id="rockBtn" class="rock">Rock</button>
-<button id="paperBtn" class="paper">Paper</button>
-<button id="scissBtn" class="scissors">Scissors</button></div>
+<button id="rockBtn" class="transparent-background"><img src="images/rock.png" /></button>
+<button id="paperBtn" > <img src="images/paper.png" /></button>
+<button id="scissBtn" class="scissors"><img src="images/scissors.png" /></button></div>
 <div id="score">
+    <div class="computer-score">
     <h2>Computer Score:</h2>
-    <h3 id="computerScore">0</h3> 
-    <h2>Your Score:</h2>
-    <h3 id="playerScore">0</h3>
+    <h3 id="computerScore">0</h3> </div>
+    <div class="player-score"><h2>Your Score:</h2>
+    <h3 id="playerScore">0</h3></div>
     
 </div>
 <div id="results"></div>
